@@ -1,0 +1,334 @@
+{
+  "configs": [
+    {
+      "conditions": [
+        {
+          "_id": "tYahtH94x-0Iy8u5P0xi",
+          "event_type": "app_event",
+          "context_rule_type": "APP",
+          "type": "did",
+          "sequence": -1,
+          "time_bounds": {
+            "lower": 0,
+            "upper": 6000000
+          },
+          "count_config": {
+            "count": 1,
+            "operator": "GTE"
+          },
+          "combine_operator": "OR",
+          "activity": "",
+          "details": {
+            "name": "ActionEvent2",
+            "additional_info": {}
+          },
+          "trigger": {
+            "event_type": "app_start",
+            "activity": "",
+            "details": {
+              "name": "",
+              "additional_info": {}
+            },
+            "time_bounds": {
+              "lower": 0,
+              "upper": 60000000
+            }
+          }
+        }
+      ],
+      "goal_met_check": false,
+      "sequence_enabled": false,
+      "state": "DRAFT",
+      "pre_cs": [],
+      "_id": "4fa6aede-9fac-497d-9832-35245b778300-1-testing",
+      "pagination_id": "01HNVVCRJN9BDN93QK9JZK90X9",
+      "mid": "2d493841-54fe-4b53-b25b-1ff7b5998d82",
+      "published": false,
+      "track": {
+        "created_at": "2024-02-05T05:20:57.886Z",
+        "updated_at": "2024-02-05T05:21:48.080Z",
+        "created": {
+          "__$MSCdate": 1707110457886
+        },
+        "updated": {
+          "__$MSCdate": 1707110508080
+        }
+      },
+      "enabled": true,
+      "audience": {
+        "audience_type": "ALL",
+        "only_anonymous": false,
+        "exclude_anonymous": false,
+        "attributes": {
+          "user": [],
+          "session": []
+        },
+        "limited": {},
+        "cohort_id": "",
+        "segment_id": "",
+        "dynamic_cohort_id": "",
+        "end_time": "2024-02-05T23:59:59.999Z",
+        "start_time": "2024-01-21T00:00:00.000Z"
+      },
+      "at_specific_time": false,
+      "cg_percentage": 3,
+      "pre_cs_seq_enabled": false,
+      "surveyType": "legacy",
+      "time_limits": {
+        "start_time": "10:00",
+        "end_time": "20:30"
+      },
+      "meta": {
+        "is_mweb": false,
+        "description": "",
+        "type": "EMBEDDED",
+        "version": 2,
+        "created_by": "siddhartha.kakaraparthy@apxor.com",
+        "platform": "android",
+        "tags": [],
+        "isExperiment": false,
+        "name": "KS: embedded cards termination-1",
+        "updated_by": "siddhartha.kakaraparthy@apxor.com",
+        "config_type": "walkthrough",
+        "v2": true,
+        "attr": {
+          "apx_message_step": 1
+        }
+      },
+      "pid": "4fa6aede-9fac-497d-9832-35245b778300-testing-testing",
+      "ui": {
+        "view_id": "embedded1",
+        "activity": "com.cosmos.pinwheel.ActionViews",
+        "styleSheet": "* {box-sizing: border-box;}body {margin: 0px;}#overlay {height: 320px;display: flex;gap: 14px;overflow: scroll;padding: 8px 0px 0px 8px;}.cardClass {box-shadow: 0px 0px 6px rgba(0, 0, 1, 0.2);border-radius: 14px;gap: 5px;width: 265px;flex: 0 0 265px;height: 300px;display: flex;flex-direction: column;padding: 5px;background-color: #ffffff;}.imgContainerClass {width: 100%;height: 60%;}.imgClass {width: 100%;height: 100%;}.textContainerClass {color: #000000;padding: 5px;gap:5px;width:100%;height: 35%;display: flex;flex-direction: column;}.titleClass {font-size: 18px;font-weight: bold;}.descriptionClass {font-size: 14px;}.buttonContainerClass {width:100%;height: 15%;padding: 10px 5px;}.buttonClass {font-weight: 600;font-size: 18px;padding: 0px;border: none;outline: none;background-color: #ffffff;color: #139ec7;}",
+        "layout": {
+          "type": "cell",
+          "direction": "row",
+          "properties": {
+            "id": "overlay",
+            "className": "overlayClass"
+          },
+          "actions": {
+            "onclick": {}
+          },
+          "terminations": {},
+          "children": [
+            {
+              "type": "cell",
+              "direction": "column",
+              "properties": {
+                "id": "card1",
+                "className": "cardClass"
+              },
+              "children": [
+                {
+                  "type": "cell",
+                  "properties": {
+                    "id": "imgContainer1",
+                    "className": "imgContainerClass"
+                  },
+                  "children": [
+                    {
+                      "type": "img",
+                      "properties": {
+                        "id": "img1",
+                        "className": "imgClass",
+                        "src": "https://cdn.jsdelivr.net/gh/Gautham-Apxor/dec-1st-half@main/Study%20Abroad%20loan.png",
+                        "alt": "Study Abroad"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "cell",
+                  "direction": "column",
+                  "properties": {
+                    "id": "textContainer1",
+                    "className": "textContainerClass"
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "properties": {
+                        "id": "title1",
+                        "className": "titleClass",
+                        "innerHTML": "Study Abroad Loan"
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "properties": {
+                        "id": "description1",
+                        "className": "descriptionClass",
+                        "innerHTML": "Hassle-free education loans for studying abroad"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "cell",
+                  "properties": {
+                    "id": "buttonContainer1",
+                    "className": "buttonContainerClass"
+                  },
+                  "children": [
+                    {
+                      "type": "button",
+                      "properties": {
+                        "id": "button1",
+                        "className": "buttonClass",
+                        "innerHTML": "Explore"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "cell",
+              "direction": "column",
+              "properties": {
+                "id": "card2",
+                "className": "cardClass"
+              },
+              "children": [
+                {
+                  "type": "cell",
+                  "properties": {
+                    "id": "imgContainer2",
+                    "className": "imgContainerClass"
+                  },
+                  "children": [
+                    {
+                      "type": "img",
+                      "properties": {
+                        "id": "img2",
+                        "className": "imgClass",
+                        "src": "https://cdn.jsdelivr.net/gh/Gautham-Apxor/dec-1st-half@main/Study%20Housing.png",
+                        "alt": "Student Housing"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "cell",
+                  "direction": "column",
+                  "properties": {
+                    "id": "textContainer2",
+                    "className": "textContainerClass"
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "properties": {
+                        "id": "title2",
+                        "className": "titleClass",
+                        "innerHTML": "Student Housing"
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "properties": {
+                        "id": "description2",
+                        "className": "descriptionClass",
+                        "innerHTML": "Find your perfect accommodation abroad"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "cell",
+                  "properties": {
+                    "id": "buttonContainer2",
+                    "className": "buttonContainerClass"
+                  },
+                  "children": [
+                    {
+                      "type": "button",
+                      "properties": {
+                        "id": "button2",
+                        "className": "buttonClass",
+                        "innerHTML": "Explore"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "overall_cfg": {
+        "ret_day": {},
+        "events": [],
+        "session": {},
+        "exclude_cohort": {
+          "cohort_id": ""
+        },
+        "hasExcludeCohort": false,
+        "hasEvents": false,
+        "toggleRetDay": false,
+        "toggleSession": false
+      },
+      "c_type": 0,
+      "time_limits_in_day": false,
+      "no_context_enabled": false,
+      "validity": {
+        "start_date": "2024-02-05T05:19:40.902Z",
+        "end_date": "2024-02-12T05:19:40.902Z",
+        "start_datetime": {
+          "__$MSCdate": 1707110380902
+        },
+        "end_datetime": {
+          "__$MSCdate": 1707715180902
+        }
+      },
+      "frequency": {
+        "count": 100,
+        "time_interval": 1000,
+        "validity": "SESSION",
+        "DSLimits": false
+      },
+      "type": "EMBEDDED",
+      "theme": {
+        "custom_fonts": []
+      },
+      "terminate_info": {
+        "auto_dismiss": false,
+        "duration": 5000,
+        "conditions": [],
+        "enable_time_based": false,
+        "time_based": {
+          "type": "relative",
+          "duration_seconds": 10,
+          "days": 1
+        },
+        "enable_goal_events": false,
+        "goal_events": {
+          "sequence_enabled": false,
+          "events": []
+        },
+        "enable_touch": false,
+        "touch": {
+          "target_view": 1
+        },
+        "enable_attributes": false,
+        "attributes": {
+          "session": [],
+          "user": []
+        }
+      },
+      "devices": [
+        "abc331d4c1c1c41d"
+      ],
+      "index": 0,
+      "experiment": {
+        "publishSettings": {
+          "CG": 3,
+          "time_settings": {
+            "time_limits": {}
+          }
+        }
+      }
+    }
+  ]
+}
