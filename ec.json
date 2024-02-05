@@ -296,25 +296,51 @@
         "auto_dismiss": false,
         "duration": 5000,
         "conditions": [],
-        "enable_time_based": false,
+        "enable_time_based": true,
         "time_based": {
-          "type": "relative",
-          "duration_seconds": 10,
-          "days": 1
+            "type": "relative",
+            "duration_seconds": 10,
+            "days": 1
         },
-        "enable_goal_events": false,
+        "enable_goal_events": true,
         "goal_events": {
-          "sequence_enabled": false,
-          "events": []
+            "sequence_enabled": false,
+            "events": [
+                {
+                    "event_type": "app_event",
+                    "time_bounds": {
+                        "lower": 0,
+                        "upper": 6000000
+                    },
+                    "count_config": {
+                        "count": 1,
+                        "operator": "GTE"
+                    },
+                    "combine_operator": "OR",
+                    "details": {
+                        "additional_info": {},
+                        "name": "ActionEvent3"
+                    }
+                }
+            ]
         },
         "enable_touch": false,
         "touch": {
           "target_view": 1
         },
-        "enable_attributes": false,
+                "enable_attributes": true,
         "attributes": {
-          "session": [],
-          "user": []
+            "session": [],
+            "user": [
+                {
+                    "name": "custom_user_id",
+                    "value": [
+                        "custom user id"
+                    ],
+                    "type": "s",
+                    "operator": "EQ"
+                }
+            ]
         }
       },
       "devices": [
